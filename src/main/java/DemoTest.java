@@ -24,7 +24,10 @@ public class DemoTest {
     }
     @Test
     void test() {
-        System.out.println("I am inside test");
+        driver.get("https://bonigarcia.dev/selenium-webdriver-java/");
+        String title = driver.getTitle();
+
+        System.out.println(title);
     }
 
 }
